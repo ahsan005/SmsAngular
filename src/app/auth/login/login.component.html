@@ -1,0 +1,39 @@
+
+<nb-card>
+  <nb-card-header>Login</nb-card-header>
+  <nb-card-body>
+    <form [formGroup]="loginForm" (ngSubmit)=onSubmit()>
+      <div class="form-group">
+        <div class="row gx-3 justify-content-center">
+          <div class="col-lg-3 col-md-10 col-xs-8 col-margin-fix">
+            <label class="label label-info" for="cname">UserName</label>
+            <input
+              class="form-control"
+              type="text"
+              id="UserName"
+              formControlName="UserName"
+            />
+          </div>
+          <div class="col-lg-3 col-md-10 col-xs-8 col-margin-fix">
+            <label class="label label-info" for="cname">Password</label>
+            <input
+              class="form-control"
+              type="text"
+              id="Password"
+              formControlName="Password"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row gx-1 justify-content-center py-4">
+        <div class="col-lg-3 col-md-3 col-xs-5">
+
+          <button  nbButton shape="semi-round" status="success"  fullWidth>
+            Login
+          </button>
+        </div>
+      </div>
+    </form>
+  </nb-card-body>
+  <nb-card-footer>Protected by Angular Auth Guard and JWT</nb-card-footer>
+</nb-card>

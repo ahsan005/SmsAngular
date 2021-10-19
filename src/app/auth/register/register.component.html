@@ -1,0 +1,56 @@
+
+<div class="row gx-5 pb-5">
+  <h4 class="text-center">Register Student</h4>
+</div>
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <div class="row gx-3 justify-content-center">
+      <div class="col-lg-3 col-md-10 col-xs-8 col-margin-fix">
+        <label class="label label-info" for="cname">FirstName</label>
+        <input
+          class="form-control"
+          type="text"
+          id="FirstName"
+          formControlName="FirstName"
+        />
+      </div>
+      <div class="col-lg-3 col-md-10 col-xs-8 col-margin-fix">
+        <label class="label label-info" for="cname">LastName</label>
+        <input
+          class="form-control"
+          type="text"
+          id="LastName"
+          formControlName="LastName"
+        />
+      </div>
+    </div>
+    <div class="row gx-3 justify-content-center">
+      <div class="col-lg-3 col-md-10 col-xs-8 col-margin-fix">
+        <label class="label label-info" for="cname">UserName</label>
+        <input
+          class="form-control"
+          type="text"
+          id="UserName"
+          formControlName="UserName"
+        />
+      </div>
+      <div class="col-lg-3 col-md-10 col-xs-8 col-margin-fix">
+        <label class="label label-info" for="cname">Password</label>
+        <input
+          class="form-control"
+          type="password"
+          id="Password"
+          formControlName="Password"
+        />
+      </div>
+    </div>
+    <div class="row gx-1 justify-content-center py-4">
+      <div class="col-lg-3 col-md-3 col-xs-5">
+
+        <button  nbButton shape="semi-round" status="success"  fullWidth>
+          Register
+        </button>
+      </div>
+    </div>
+  </div>
+</form>

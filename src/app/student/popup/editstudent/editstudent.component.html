@@ -1,0 +1,111 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+  <button
+    type="button"
+    class="close"
+    aria-label="Close"
+    (click)="modal.dismiss('Cross click')"
+  >
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <form [formGroup]="studentEditForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <input [hidden]=true readonly
+            class="form-control"
+            type="text"
+            id="ID"
+            formControlName="ID"
+
+          />
+      <div class="row gx-3 justify-content-center">
+        <div class="col-lg-3 col-md-10 col-xs-8 col-margin-fix">
+          <label class="label label-info" for="cname">StudentName</label>
+          <input
+            class="form-control"
+            type="text"
+            id="StudentName"
+            formControlName="StudentName"
+          />
+        </div>
+        <div class="col-lg-3 col-md-10 col-xs-8 col-margin-fix">
+          <label class="label label-info" for="cname">Student-Age</label>
+          <input
+            class="form-control"
+            type="text"
+            id="StudentAge"
+            formControlName="StudentAge"
+          />
+        </div>
+      </div>
+      <div class="row gx-3 justify-content-center">
+        <div class="col-lg-3 col-md-10 col-xs-8 col-margin-fix">
+          <label class="label label-info" for="cname">StudentLastName</label>
+          <input
+            class="form-control"
+            type="text"
+            id="StudentLastName"
+            formControlName="StudentLastName"
+          />
+        </div>
+        <div class="col-lg-3 col-md-10 col-xs-8 col-margin-fix">
+          <label class="label label-info" for="cname">Student-BloodGroup</label>
+          <input
+            class="form-control"
+            type="text"
+            id="StudentBloodGroup"
+            formControlName="StudentBloodGroup"
+          />
+        </div>
+        <div class="col-lg-3 col-md-10 col-xs-8 col-margin-fix">
+          <label class="label label-info" for="cname">Student Father CNIC</label>
+          <input
+            class="form-control"
+            type="text"
+            id="StudentFatherCNIC"
+            formControlName="StudentFatherCNIC"
+          />
+        </div>
+      </div>
+      <div class="row gx-3 justify-content-center">
+        <div class="col-lg-3 col-md-10 col-xs-8 col-margin-fix">
+          <label class="label label-info" for="cname">Student-Mobile Number</label>
+          <input
+            class="form-control"
+            type="text"
+            id="StudentMobileNumber"
+            formControlName="StudentMobileNumber"
+          />
+        </div>
+        <div class="col-lg-3 col-md-10 col-xs-8 col-margin-fix">
+          <label class="label label-info" for="cname">Student Address</label>
+          <input
+            class="form-control"
+            type="text"
+            id="StudentAddress"
+            formControlName="StudentAddress"
+          />
+        </div>
+      </div>
+
+
+    </div>
+  </form>
+</div>
+<div class="modal-footer">
+  <button nbButton
+    type="button"
+  status="success"
+    (click)="onSubmit()"
+  >
+    Save
+  </button>
+  <button nbButton
+    type="button"
+
+    (click)="modal.close('Save click')"
+  >
+    Cancel
+  </button>
+</div>

@@ -1,0 +1,84 @@
+<div class="row gx-5 pb-5">
+  <h4 class="text-center">Register Student</h4>
+</div>
+<form [formGroup]="studentForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <div class="row gx-3 justify-content-center">
+      <div class="col-lg-3 col-md-10 col-xs-8 col-margin-fix">
+        <label class="label label-info" for="cname">StudentName</label>
+        <input
+          class="form-control"
+          type="text"
+          id="StudentName"
+          formControlName="StudentName"
+        />
+      </div>
+      <div class="col-lg-3 col-md-10 col-xs-8 col-margin-fix">
+        <label class="label label-info" for="cname">Student-Age</label>
+        <input
+          class="form-control"
+          type="text"
+          id="StudentAge"
+          formControlName="StudentAge"
+        />
+      </div>
+    </div>
+    <div class="row gx-3 justify-content-center">
+      <div class="col-lg-3 col-md-10 col-xs-8 col-margin-fix">
+        <label class="label label-info" for="cname">StudentLastName</label>
+        <input
+          class="form-control"
+          type="text"
+          id="StudentLastName"
+          formControlName="StudentLastName"
+        />
+      </div>
+      <div class="col-lg-3 col-md-10 col-xs-8 col-margin-fix">
+        <label class="label label-info" for="cname">Student-BloodGroup</label>
+        <input
+          class="form-control"
+          type="text"
+          id="StudentBloodGroup"
+          formControlName="StudentBloodGroup"
+        />
+      </div>
+      <div class="col-lg-3 col-md-10 col-xs-8 col-margin-fix">
+        <label class="label label-info" for="cname">Student Father CNIC</label>
+        <input
+          class="form-control"
+          type="text"
+          id="StudentFatherCNIC"
+          formControlName="StudentFatherCNIC"
+        />
+      </div>
+    </div>
+    <div class="row gx-3 justify-content-center">
+      <div class="col-lg-3 col-md-10 col-xs-8 col-margin-fix">
+        <label class="label label-info" for="cname">Student-Mobile Number</label>
+        <input
+          class="form-control"
+          type="text"
+          id="StudentMobileNumber"
+          formControlName="StudentMobileNumber"
+        />
+      </div>
+      <div class="col-lg-3 col-md-10 col-xs-8 col-margin-fix">
+        <label class="label label-info" for="cname">Student Address</label>
+        <input
+          class="form-control"
+          type="text"
+          id="StudentAddress"
+          formControlName="StudentAddress"
+        />
+      </div>
+    </div>
+    <div class="row gx-1 justify-content-center py-4">
+      <div class="col-lg-8 col-md-6 col-xs-5">
+
+        <button  nbButton shape="semi-round" status="success"  fullWidth>
+          Register
+        </button>
+      </div>
+    </div>
+  </div>
+</form>

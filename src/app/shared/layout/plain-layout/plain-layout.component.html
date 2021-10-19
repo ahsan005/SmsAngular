@@ -1,0 +1,27 @@
+
+
+<nb-layout windowMode>
+  <nb-layout-header fixed>
+
+    <app-header>
+
+    </app-header>
+  </nb-layout-header>
+  <nb-layout-column>
+    <ng-content select="router-outlet"></ng-content>
+  </nb-layout-column>
+  <!-- *ngIf="innerWidth>768px" -->
+  <nb-layout-footer fixed>
+    <app-footer ></app-footer>
+  </nb-layout-footer>
+  <nb-layout-footer fixed>
+    <!-- Copyright -->
+
+<div class="text-center" style="margin-top:-50px ;">
+  © 2020 Copyright:
+  <span>Ahsan</span>
+</div>
+
+<!-- Copyright -->
+  </nb-layout-footer>
+</nb-layout>

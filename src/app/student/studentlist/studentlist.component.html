@@ -1,0 +1,27 @@
+<table class="table table-hover table-striped table-bordered table-light">
+  <thead>
+    <tr>
+  <th scope="col">ID</th>
+  <th scope="col">StudentName</th>
+  <th scope="col">StudentAge</th>
+  <th scope="col">StudentLastName</th>
+  <th scope="col">StudentBloodGroup</th>
+  <th scope="col">StudentFatherCNIC</th>
+  <th scope="col">StudentMobileNumber</th>
+  <th scope="col">StudentAddress</th>
+</tr>
+</thead>
+<tr class="text-center " scope="row" *ngFor="let item of list">
+  <td class="py-2 id">{{item.ID}}</td>
+  <td class="py-2">{{item.StudentName}}</td>
+  <td class="py-2">{{item.StudentLastName}}</td>
+  <td class="py-2">{{item.StudentAge}}</td>
+  <td class="py-2">{{item.StudentBloodGroup}}</td>
+  <td class="py-2">{{item.StudentFatherCNIC}}</td>
+  <td class="py-2">{{item.StudentMobileNumber}}</td>
+  <td class="py-2">{{item.StudentAddress}}</td>
+<td class="py-2"><div class="col-lg-3"><button nbButton status="primary" (click)="editBtn(item)">Edit</button> </div> <div class="col-lg-3"><button nbButton status="danger" (click)="deleteBtn(item.ID)">Delete</button></div></td>
+
+</tr>
+</table>
+<!-- <app-editstudent #modal></app-editstudent> -->
