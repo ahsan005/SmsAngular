@@ -1,3 +1,4 @@
+import { AdmissionComponent } from './../admission/admission.component';
 import { StudentModule } from './../student.module';
 import { Student } from './../../models/student';
 import { EditstudentComponent } from './../popup/editstudent/editstudent.component';
@@ -35,7 +36,10 @@ idToDelete:any;
   }
 }
 @Input() public student:Student
+AddBtn(){
+  const ref = this.modalService.open(AdmissionComponent,{size:'xl'});
 
+}
 editBtn(item:Student){
  const ref = this.modalService.open(EditstudentComponent,{size:'xl'});
  this.student = item
