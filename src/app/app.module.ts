@@ -12,6 +12,7 @@ import {
   NbButton,
   NbButtonModule,
   NbCardModule,
+  NbToastrModule,
 } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -50,6 +51,7 @@ import * as $ from 'jquery';
     NbButtonModule,
     NbCardModule,
     HttpClientModule,
+    NbToastrModule.forRoot(),
 
     // JwtModule.forRoot({
     //   config: {

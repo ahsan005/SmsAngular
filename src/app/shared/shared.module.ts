@@ -8,12 +8,14 @@ import { PlainLayoutComponent } from './layout/plain-layout/plain-layout.compone
 
 
 
+
 @NgModule({
   declarations: [
 
     FooterComponent,
     HeaderComponent,
     PlainLayoutComponent,
+
 
   ],
   imports: [
